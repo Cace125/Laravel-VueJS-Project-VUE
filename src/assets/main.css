@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
+
+.mother {
+  @apply font-sans flex flex-wrap m-0 p-0 box-border justify-evenly;
+}
+
+.child-divs {
+  @apply border-gray-300 border-2 rounded-md p-5 min-w-min mx-auto border-dotted
+}
+
+.form {
+  @apply mt-12 w-full mx-auto pr-6 pl-6
+}
+
+.form-section {
+  @apply flex border-b border-slate-300 pb-8 mt-10 h-24
+}
+
+.fields-name {
+  @apply mt-10 w-1/3 mr-8 text-sm text-gray-400 font-bold
+}
+
+.fields {
+  @apply w-1/2 h-7 rounded-md mt-8 mx-auto mb-10 border border-gray-400 text-center
+}
+
+.buttons {
+  @apply w-1/5 h-8 rounded-md border border-gray-400 text-gray-400
+}
+
+.buttons:hover {
+  @apply w-1/5 h-8 rounded-md border-2 bg-gray-400 border-gray-500 text-white
+}
+
+.table {
+  @apply flex justify-evenly border-b border-gray-400 bg-gray-100 rounded-md
+}
+
+.section-headers {
+  @apply border-b border-gray-400 mb-2
+}
+
+.section-rows {
+  @apply border-b border-gray-300 border-dotted pb-1 rounded-md
+}
+
+.headers {
+  @apply w-80 h-8 mt-2 pl-6 text-gray-500 text-left
+}
+
+.rows {
+  @apply w-80 text-gray-400 text-left pt-4 h-12
+}
